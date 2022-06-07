@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인페이지</title>
+<!--    title 밑에 폰트 링크 복사한 것 넣기-->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+        .mytitle {
+            width: 300px;
+            height: 200px;
+
+            color: white;
+            text-align: center;
+
+            /*이미지 넣을 때 쓰는 3줄 코드*/
+            background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 10px;
+
+            padding-top: 20px;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: auto;
+        }
+
+        .mybtn {
+            width: 100px;
+            margin: auto;
+            /*버튼 같은 것은 박스가 아니라 글속성이라*/
+            /* 가로,세로 개념이 모호해서 강제로 박스 속성으로 바꿔야 이동 가능함*/
+            display: block;
+        }
+
+        /*클래스 여러개 적용시키기 예시 ->mybtn에 사용*/
+        /*.red-font {*/
+        /*    color: red;*/
+        /*    font-size: 16px;*/
+        /*} */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="mytitle">
+            <h1>로그인 페이지</h1>
+            <h5>아이디, 패스워드를 입력해주세요</h5>
+        </div>
+
+        <p>ID: <input type="text"/></p>
+        <p>PW: <input type="text"/></p>
+        <button class="mybtn">로그인하기</button>
+<!--        class 2개 적용시키는 법(콤마 없이 그냥 띄어쓰기)-->
+<!--        <button class="mybtn red-font">로그인하기</button>-->
+    </div>
+
+</body>
+</html>
